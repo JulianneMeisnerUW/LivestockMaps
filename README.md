@@ -1,5 +1,7 @@
 # LivestockMaps
-A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 decimal degrees) for Uganda (2000-2020), Malawi (2000-2020), and DRC (2008-2015), median and width of posterior 95% credible interval. County-level 2008 density estimates for South Sudan, median and sd. 
+- A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 decimal degrees) for Uganda (2000-2020), Malawi (2000-2020), and DRC (2008-2015), median and width of posterior 95% credible interval. County-level 2008 density estimates for South Sudan, median and sd. 
+
+- These are in the DRC, Uganda, and Malawi folders, and South Sudan .zipped file
 
 ## Data sources for livestock maps:
 
@@ -19,12 +21,20 @@ A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 
 ### Shapefiles
 * [GADM](https://gadm.org/download_country_v3.html)
 * [Settlements (DRC)](https://cod-data.forest-atlas.org/datasets/eaa138a4908b4d1588e6ba3d21ea5698_0/data)
+* [Humanitarian data exchange](https://data.humdata.org/organization/hdx?groups=sle&res_format=zipped+shapefile)
 - (may be missing some)
+
+### External validation
+* [GLW-3](https://dataverse.harvard.edu/dataverse/glw_3)
+* [FAOSTAT](http://www.fao.org/faostat/en/#data/QA)
+* [World Bank population totals](https://data.worldbank.org/indicator/SP.POP.TOTL)
+
 
 ## Data sources for g-formula and regression implementation
 
 ### Outcome (HAT) data source:
 * [WHO Atlas of HAT](https://www.who.int/trypanosomiasis_african/country/foci_AFRO/en/)
+* [Travel time to a FHF capable of HAT diagnosis](https://pubmed.ncbi.nlm.nih.gov/28531222/)
 
 ### Denominator (offset; population)
 * [WorldPop population counts](https://www.worldpop.org/project/categories?id=3)
@@ -68,7 +78,7 @@ codes/
 - (21) gformula_results
 
 ### Functions code:
-- (1) my_functions_mw (used for data processing)
+- (1) my_functions (used for data processing)
 - (2) functions_prediction (used for working with INLA models)
 - (3) gformula_functions (used for gformula stuff)
 
@@ -81,3 +91,6 @@ codes/
 - (6) index_events_ss
 - (7) regression_ss
 - (8) plots (same one as for other countries, above)
+
+# Stochastic compartmental model for HAT
+- Model code is in CMS folder
