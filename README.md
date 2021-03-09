@@ -16,7 +16,6 @@
 * [Elevation (GMTED2010)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation?qt-science_center_objects=0#qt-science_center_objects)
 * [Water bodies (Global Lakes and Wetlands)](https://www.worldwildlife.org/pages/global-lakes-and-wetlands-database)
 * [Protected areas (World Database of Protected Areas)](https://www.protectedplanet.net/en)
-* [WorldPop under US$/day](https://www.worldpop.org/project/categories?id=9)
 
 ### Shapefiles
 * [GADM](https://gadm.org/download_country_v3.html)
@@ -28,7 +27,6 @@
 * [GLW-3](https://dataverse.harvard.edu/dataverse/glw_3)
 * [FAOSTAT](http://www.fao.org/faostat/en/#data/QA)
 * [World Bank population totals](https://data.worldbank.org/indicator/SP.POP.TOTL)
-
 
 ## Data sources for g-formula and regression implementation
 
@@ -43,14 +41,51 @@
 * [NDVI and LST](https://ladsweb.modaps.eosdis.nasa.gov)
 * [Armed conflict (UCDP)](https://ucdp.uu.se)
 * [Disasters (EM-DAT)](https://www.emdat.be)
+* [WorldPop under US$/day](https://www.worldpop.org/project/categories?id=9)
+-WorldPop poverty indicator isn't really a confounder, but is used to map wealth, which is
 
-## Recommended file structure:
+## Recommended file structure for organizing the above data:
 ### Codes:
 ```bash
 codes/
 ```
 ### Data:
-
+Survey (livestock) data:
+```bash
+Data/Exposure_data/[country]/inputs/[survey]/
+```
+Shapefiles (exception: DHS shapefiles in inputs folder):
+```bash
+Data/Exposure_data/[country]/shapefiles/
+```
+WHO Atlas of HAT data:
+```bash
+Data/Outcome_data/[country]/
+```
+WorldPop population counts, WHO travel time to FHF capable of HAT diagnosis
+```bash
+Data/Denominator_data/
+```
+Predictors except WorldPop population density for urbanicity mapping
+```bash
+Data/Predictor_data/[predictor]/
+```
+WorldPop population density for urbanicity mapping
+```bash
+Data/Predictor_data/Urbanicity/[country]/
+```
+Confounders
+```bash
+Data/Confounder_data/[cnfounder]/
+```
+External validation
+```bash
+Data/External_validation/
+```
+Mediators
+```bash
+Data/Mediator/[mediator]
+```
 ## Order for running codes: 
 
 ### SPDE countries (Malawi, Uganda, DRC):
