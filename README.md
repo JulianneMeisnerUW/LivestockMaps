@@ -14,6 +14,7 @@ A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 
 * [Elevation (GMTED2010)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation?qt-science_center_objects=0#qt-science_center_objects)
 * [Water bodies (Global Lakes and Wetlands)](https://www.worldwildlife.org/pages/global-lakes-and-wetlands-database)
 * [Protected areas (World Database of Protected Areas)](https://www.protectedplanet.net/en)
+* [WorldPop under US$/day](https://www.worldpop.org/project/categories?id=9)
 
 ### Shapefiles
 * [GADM](https://gadm.org/download_country_v3.html)
