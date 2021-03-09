@@ -32,6 +32,8 @@ A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 
 * [Disasters (EM-DAT)](https://www.emdat.be)
 
 ## Recommended file structure:
+### Codes:
 ```bash
-codes/all code
+codes/
 ```
+### Data:
