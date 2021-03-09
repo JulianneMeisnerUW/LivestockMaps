@@ -44,7 +44,7 @@ codes/
 
 ### SPDE countries (Malawi, Uganda, DRC):
 
-- (1) data_processing(country-specific)
+- (1) data_processing (country-specific)
 - (2) dataset_prep (country-specific)
 - (3) urbanicity_prep
 - (4) urbanicity_validation
