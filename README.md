@@ -1,3 +1,6 @@
+# In case of problems
+Please email at meisner.julianne [AT] gmail [DOT] com
+
 # LivestockMaps
 - A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 decimal degrees) for Uganda (2000-2020), Malawi (2000-2020), and DRC (2008-2015), median and width of posterior 95% credible interval. County-level 2008 density estimates for South Sudan, median and sd. 
 
@@ -38,11 +41,11 @@
 * [WorldPop population counts](https://www.worldpop.org/project/categories?id=3)
 
 ### Confounders and mediators
-* [NDVI and LST](https://ladsweb.modaps.eosdis.nasa.gov)
+* [NDVI (AVHRR) and LST (MODIS)](https://ladsweb.modaps.eosdis.nasa.gov)
 * [Armed conflict (UCDP)](https://ucdp.uu.se)
 * [Disasters (EM-DAT)](https://www.emdat.be)
 * [WorldPop under US$/day](https://www.worldpop.org/project/categories?id=9)
--WorldPop poverty indicator isn't really a confounder, but is used to map wealth, which is
+- WorldPop poverty indicator isn't really a confounder, but is used to map wealth, which is
 
 ## Recommended file structure for organizing the above data:
 ### Codes:
@@ -82,9 +85,9 @@ External validation
 ```bash
 Data/External_validation/
 ```
-Mediators
+Mediators (AVHRR and MODIS)
 ```bash
-Data/Mediator/[mediator]
+Data/Mediator/[mediator]/
 ```
 ## Order for running codes: 
 
