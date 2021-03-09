@@ -18,6 +18,7 @@ A time series of cattle and pig density (ratio of livestock/humans) maps (0.017 
 ### Shapefiles
 * [GADM](https://gadm.org/download_country_v3.html)
 * [Settlements (DRC)](https://cod-data.forest-atlas.org/datasets/eaa138a4908b4d1588e6ba3d21ea5698_0/data)
+(may be missing some)
 
 ## Data sources for g-formula and regression implementation
 
